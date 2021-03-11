@@ -263,6 +263,7 @@ nav ul {
     transform: translate(500px, 0);
   }
 }
+
 section {
   display: flex;
   justify-content: center;
@@ -281,6 +282,7 @@ section {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
+  /* overflow: hidden; */
   margin: 0 30px;
 }
 .btn:hover {
