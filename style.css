@@ -4,6 +4,265 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Helvetica;
+  background-color: lightblue;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid gray;
+  box-shadow: 4px 4px 14px white;
+}
+
+.nav {
+  display: flex;
+}
+.nav .menu {
+  list-style: none;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.nav li a {
+  color: black;
+}
+
+.list {
+  display: list-item;
+  text-align: center;
+  margin: 0 25px;
+  padding: 10px 0;
+}
+
+/*  this is about me */
+.nav .about-me {
+  display: none;
+}
+.nav li:hover .about-me {
+  display: block;
+  border: 1px solid transparent;
+  background-color: rgb(235, 230, 230);
+  position: absolute;
+  color: gray;
+}
+.about-me ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  text-align: left;
+}
+.about-me ul li:hover {
+  background-color: thistle;
+  color: gray;
+}
+.about-me:hover {
+  box-shadow: 3px 3px 15px gray;
+}
+.about-me ul li:nth-child(1) {
+  border-bottom: 1px solid orange;
+  padding: 10px;
+}
+.about-me ul li:nth-child(2) {
+  border-bottom: 1px solid orange;
+  padding: 20px;
+}
+.nav li:hover i {
+  color: orangered;
+}
+.nav li:hover a {
+  color: gray;
+}
+
+/*services*/
+
+.nav .services {
+  display: none;
+}
+.nav li:hover .services {
+  display: block;
+}
+
+.item .marketing {
+  display: none;
+}
+.item:hover .marketing {
+  display: block;
+}
+
+.marketing li {
+  display: block;
+}
+
+/* .services .marketing:nth-child(2) {
+  display: none;
+}
+.services .marketing:nth-child(3) {
+  display: none;
+}
+
+.services .mobile:nth-child(1) {
+  display: none;
+}
+.services .mobile:nth-child(2) {
+  display: none;
+}
+.services .mobile:nth-child(3) {
+  display: none;
+} */
+
+/* 
+.marketing {
+  display: none;
+}
+.market-list:hover {
+}
+.mobile {
+  display: none;
+} */
+
+nav ul {
+  list-style: none;
+}
+.services ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  text-align: left;
+}
+
+.nav li:hover .services {
+  display: block;
+  border: 1px solid transparent;
+  background-color: rgb(235, 230, 230);
+  position: absolute;
+  color: gray;
+}
+.services ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  text-align: left;
+}
+.services ul li:hover {
+  background-color: thistle;
+  color: gray;
+}
+.services:hover {
+  box-shadow: 3px 3px 15px gray;
+}
+
+.bluebox {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background: radial-gradient(#03a9f4, #004b6c);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.infobox {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  border-radius: 6px;
+  height: 200px;
+  width: 300px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 3px 3px 40px white;
+  cursor: pointer;
+  background: #03a9f4;
+  animation: bounce linear 3s infinite;
+  clip-path: circle(20px at 20px 20px);
+  transition: all 0.5s linear;
+  z-index: 1000;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, 15px);
+  }
+  66% {
+    transform: translate(0, -15px);
+  }
+}
+
+.infoicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ff1493;
+  color: white;
+}
+
+.infobox:hover {
+  clip-path: circle(400px at 20px 20px);
+}
+
+.infotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smile {
+  height: 100px;
+  width: 100px;
+  padding-top: 20px;
+}
+
+.bluetext1,
+.bluetext2 {
+  font-size: 65px;
+}
+
+.bluetext1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  transform: translate(-50%, -50%);
+  animation: slide 8s linear infinite alternate;
+  -webkit-box-reflect: below -32px linear-gradient(transparent, rgba(255, 255, 241, 0.2));
+}
+
+.bluetext2 {
+  transform: translate(-50%, -50%);
+  animation: slide 10s linear infinite alternate;
+  -webkit-box-reflect: below -32px linear-gradient(transparent, rgba(255, 255, 241, 0.2));
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-500px, 0);
+  }
+  75% {
+    transform: translate(500px, 0);
+  }
+}
 section {
   display: flex;
   justify-content: center;
